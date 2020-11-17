@@ -33,6 +33,21 @@ namespace Planner
         {
             _owner = owner;
         }
+        public void Designer(string designer)
+        {
+            _designer = designer;
+        }
+        public void BuildBuilding()
+        {
+            Console.WriteLine(_address);
+            Console.WriteLine("------------");
+            Console.WriteLine($"Designed by {_designer}");
+            Console.WriteLine($"Constructed by {_dateConstructed}");
+            Console.WriteLine($"Owned by {_owner}");
+            Console.WriteLine($"{Volume} cubics meters of space");
+            Console.WriteLine("");
+        }
+
 
     }
 
