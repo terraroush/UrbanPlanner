@@ -1,0 +1,33 @@
+using System;
+
+namespace Planner
+{
+    public class Building
+    {
+        private string _designer;
+        private DateTime _dateConstructed;
+        private string _address;
+        private string _owner;
+        public int Stories { get; set; }
+        public double Width { get; set; }
+        public double Depth { get; set; }
+        public double Volume
+        {
+            get
+            {
+                return Width * Depth * (3 * Stories);
+            }
+        }
+
+
+        public Building(string address)
+        {
+            Address = address;
+
+        }
+
+        public string Address { get; set; }
+    }
+
+
+}
