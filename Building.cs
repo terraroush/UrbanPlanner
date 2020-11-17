@@ -8,6 +8,7 @@ namespace Planner
         private DateTime _dateConstructed;
         private string _address;
         private string _owner;
+
         public int Stories { get; set; }
         public double Width { get; set; }
         public double Depth { get; set; }
@@ -22,11 +23,10 @@ namespace Planner
 
         public Building(string address)
         {
-            Address = address;
+            _address = address;
 
         }
 
-        public string Address { get; set; }
     }
 
 
